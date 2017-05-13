@@ -1,5 +1,5 @@
 ### Github-Slack Webhook
- 
+
 This repository contains solution to build a customized webhook to link
 Github and Slack in order to handle pull request and merge actions.
 
@@ -20,4 +20,4 @@ We know,  there is already a solution out there for Slack
 webhooks. But, we would like you to ignore this exists and address the
 solution as you feel fit.
 ```
-
+### Setup
