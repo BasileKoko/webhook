@@ -6,7 +6,7 @@ Dotenv.load
 class WebHook
 
   attr_reader :owner, :repo, :event
-  
+
   def initialize
     @owner = "basilekoko"
     @repo = "ruby_koans"
@@ -32,7 +32,7 @@ class WebHook
     slack_message("#{ENV['SLACK_URL']}", '#general', 'pull_request_hook', "A pull request has been merged on repository #{@repo}")
   end
 
-  def event_type
+  def check_event(event_type)
     event_type = JSON.parse(@event.body).first['type']
     if event_type == "PullRequestEvent"
       pull_notification
