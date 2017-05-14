@@ -26,4 +26,11 @@ describe WebHook do
       subject.pull_notification
     end
   end
+
+  describe '#merge_notification' do
+    it 'should send merge notification to slack successfully' do
+      expect(subject).to receive(:merge_notification) {"ok"}
+      subject.merge_notification
+    end
+  end
 end
