@@ -4,7 +4,6 @@ require 'dotenv'
 Dotenv.load
 
 class WebHook
-
   attr_reader :owner, :repo, :event
 
   def initialize
