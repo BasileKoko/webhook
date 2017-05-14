@@ -28,7 +28,8 @@ This hook will be added to the server where the repository is hosted.
 It would run when change occurs on the defined repository.
 I am still looking into the right way to implement this step.
 
-To ensure that the script works as I expect,
+To ensure that notification can be sent,
+when the repository has a pull request and when pull request is merged,
 I create a separate file called webhook.rb and a test file webhook_spec.rb to test it.
 ```
 ### To do
