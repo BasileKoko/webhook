@@ -3,7 +3,7 @@
 This repository contains solution to build a customized webhook to link
 Github and Slack in order to handle pull request and merge actions.
 
-Task:
+### Task:
 ```
 Recently we have been having trouble with developers not notifying the
 rest of the team of Pull Requests that are ready for review. When
