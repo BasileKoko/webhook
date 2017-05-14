@@ -37,5 +37,5 @@ class WebHook
     merge_notification
     end
   end
-
 end
+WebHook.new.event_type
