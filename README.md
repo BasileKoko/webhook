@@ -24,14 +24,19 @@ solution as you feel fit.
 
 ```
 A server-side hook script called post-receive has been created.
-This hook should be added to the server where the repository is hosted.
-It should run when change occurs on the defined repository.
+This hook will be added to the server where the repository is hosted.
+It would run when change occurs on the defined repository.
 I am still looking into the right way to implement this step.
 
 To ensure that the script works as I expect,
 I create a separate file called webhook.rb and a test file webhook_spec.rb to test it.
 ```
-
+### To do
+```
+1. Add script to server
+2. Improve criteria for calling merge_notification in method check_event
+3. Generate single slack notification per event
+```
 ### Setup
 ```
 This setup is for webhook.rb and webhook_spec.rb
