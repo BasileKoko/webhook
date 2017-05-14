@@ -22,5 +22,10 @@ class WebHook
     cmd = "curl -X POST --data-urlencode 'payload=#{payload}' #{webhook_url}"
     system(cmd)
   end
+  
+  def pull_notification
+    pull_request_url = JSON.parse(@event.body).first['payload']['pull_request']['html_url']
+    notify_slack("#{ENV['SLACK_URL']}", '#general', 'pull_request_hook', "A pull request has been made, please access it here:  #{pull_request_url}")
+  end
 
 end
