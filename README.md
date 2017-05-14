@@ -43,7 +43,7 @@ $ touch .env
 edit .env and add your github token.
 Example: export TOKEN=xxx
 ```
-[Create Github Token]("https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/")
+[Create Github Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 
 ### To run program
 
