@@ -34,9 +34,9 @@ I create a separate file called webhook.rb and a test file webhook_spec.rb to te
 ```
 ### To do
 ```
-1. Add script to server
-2. Improve criteria for calling merge_notification in method check_event
-3. Ensure only single slack notification is generated
+1. Add script to server hosting repository
+2. Improve condition for calling method merge_notification
+3. Enforce only one slack notification per event
 ```
 ### Setup
 ```
