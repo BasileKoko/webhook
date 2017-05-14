@@ -4,9 +4,6 @@ require 'dotenv'
 Dotenv.load
 
 class WebHook
-
-
-
   def initialize
     @owner = "basilekoko"
     @repo = "ruby_koans"
