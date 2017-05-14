@@ -43,6 +43,6 @@ class WebHook
   end
 end
 
-new_event = WebHook.new
+message = WebHook.new
 event_type = JSON.parse(new_event.event.body).first['type']
-new_event.check_event(event_type)
+message.check_event(event_type)

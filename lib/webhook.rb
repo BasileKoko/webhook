@@ -30,7 +30,7 @@ class WebHook
   end
 
   private
-  
+
   def slack_message(webhook_url, channel, username, text)
     payload = {
       :channel  => channel,
@@ -42,6 +42,6 @@ class WebHook
   end
 end
 
-new_event = WebHook.new
-event_type = JSON.parse(new_event.event.body).first['type']
-new_event.check_event(event_type)
+message = WebHook.new
+event_type = JSON.parse(message.event.body).first['type']
+message.check_event(event_type)
