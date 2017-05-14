@@ -5,12 +5,12 @@ Dotenv.load
 
 class WebHook
 
-  OWNER = "basilekoko"
-  REPO = "ruby_koans"
+
 
   def initialize
-    @pull_request = Faraday.get("https://api.github.com/repos/#{OWNER}/#{REPO}/pulls?access_token=#{ENV['ACCESS_TOKEN']}")
-    @merge_close = Faraday.get("https://api.github.com/repos/#{OWNER}/#{REPO}/pulls?state=closed?access_token=#{ENV['ACCESS_TOKEN']}")
+    @owner = "basilekoko"
+    @repo = "ruby_koans"
+    @event = Faraday.get("https://api.github.com/repos/#{@owner}/#{@repo}/events?access_token=#{ENV['ACCESS_TOKEN']}")
   end
 
 end
