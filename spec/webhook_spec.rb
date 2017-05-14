@@ -2,8 +2,10 @@ require 'webhook'
 
 describe WebHook do
   describe '#initialize' do
-    it 'should return a valid event data at initialization' do
+    it 'should return correct data at initialization' do
       expect(subject.event.status).to eq 200
+      expect(subject.owner).to eq 'basilekoko'
+      expect(subject.repo).to eq 'ruby_koans'
     end
   end
 
