@@ -24,9 +24,12 @@ solution as you feel fit.
 
 ```
 A server-side hook script called post-receive has been created.
-This hook should be added to the server where the repository is hosted so it runs when change occurs on the defined repository. I am still looking into how to implement this step.
+This hook should be added to the server where the repository is hosted.
+It should run when change occurs on the defined repository.
+I am still looking into how to implement this step.
 
-To ensure that the script works as I expect, I create a separate file called webhook.rb and a test file webhook_spec.rb to test it.
+To ensure that the script works as I expect,
+I create a separate file called webhook.rb and a test file webhook_spec.rb to test it.
 ```
 
 ### Setup
