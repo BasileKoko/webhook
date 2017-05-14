@@ -47,7 +47,7 @@ $ cd webhook
 $ bundle install
 $ touch .env
 edit .env and add your github token.
-Example: export TOKEN=xxx
+Example: export ACCESS_TOKEN=xxx
 ```
 [Create Github Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 
@@ -61,6 +61,8 @@ $ ruby lib/webhook.rb
 ```
 rspec
 ```
+### Screenshot
+![slack notification screenshot](https://github.com/BasileKoko/webhook/blob/master/webhook.png)
 
 ### Gems
 ```ruby
