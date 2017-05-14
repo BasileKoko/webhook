@@ -4,6 +4,9 @@ require 'dotenv'
 Dotenv.load
 
 class WebHook
+
+  attr_reader :owner, :repo, :event
+  
   def initialize
     @owner = "basilekoko"
     @repo = "ruby_koans"
@@ -38,4 +41,4 @@ class WebHook
     end
   end
 end
-WebHook.new.event_type
+#WebHook.new.event_type
