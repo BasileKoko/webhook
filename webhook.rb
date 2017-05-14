@@ -25,11 +25,20 @@ class WebHook
 
   def pull_notification
     pull_request_url = JSON.parse(@event.body).first['payload']['pull_request']['html_url']
-    notify_slack("#{ENV['SLACK_URL']}", '#general', 'pull_request_hook', "A pull request has been made, please access it here:  #{pull_request_url}")
+    slack_message("#{ENV['SLACK_URL']}", '#general', 'pull_request_hook', "A pull request has been made, please access it here:  #{pull_request_url}")
   end
 
   def merge_notification
-    notify_slack("#{ENV['SLACK_URL']}", '#general', 'pull_request_hook', "A pull request has been merged on repository #{@repo}")
+    slack_message("#{ENV['SLACK_URL']}", '#general', 'pull_request_hook', "A pull request has been merged on repository #{@repo}")
+  end
+
+  def event_type
+    event_type = JSON.parse(@event.body).first['type']
+    if event_type == "PullRequestEvent"
+      pull_notification
+    elsif event_type == "PushEvent"
+    merge_notification
+    end
   end
 
 end
