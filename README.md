@@ -55,3 +55,10 @@ $ ruby lib/webhook.rb
 ```
 rspec
 ```
+
+### Gems
+```ruby
+gem 'dotenv'
+gem 'faraday'
+gem 'rspec'
+```
