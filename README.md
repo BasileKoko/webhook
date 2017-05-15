@@ -66,7 +66,11 @@ $ ruby lib/webhook.rb
 rspec
 ```
 ### Screenshot
-![slack notification screenshot](https://github.com/BasileKoko/webhook/blob/master/webhook.png)
+![slack notification](https://github.com/BasileKoko/webhook/blob/master/webhook.png)  
+**_Slack notification_**  
+
+![Test](https://github.com/BasileKoko/webhook/blob/master/Tests.png)  
+**_Tests_**
 
 ### Gems
 ```ruby
