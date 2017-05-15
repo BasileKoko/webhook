@@ -35,7 +35,8 @@ I create two separate files called webhook.rb and webhook_spec.rb to test it.
 ```
 1. Add script to server hosting the repository
 2. Improve merge condition for calling method merge_notification.
-At the  moment when pull request is merged the event appears as PushEvent. I would like to differentiate the merge PushEvent from a standard PushEvent.
+At the  moment when pull request is merged the event appears as PushEvent.
+I would like to differentiate the merge PushEvent from a standard PushEvent.
 ```
 ### Setup
 ```
