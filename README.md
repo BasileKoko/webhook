@@ -40,16 +40,20 @@ I would like to differentiate the merge PushEvent from a standard PushEvent.
 ```
 ### Setup
 ```
-This setup is for webhook.rb and webhook_spec.rb
+You need the setup instructions below to run the script in your own environment
 
 $ git clone https://github.com/BasileKoko/webhook.git
 $ cd webhook
 $ bundle install
 $ touch .env
-edit .env and add your github token.
-Example: export ACCESS_TOKEN=xxx
+edit .env and add your github token and your slack web_url (see the links below).
+Example:
+export ACCESS_TOKEN=xxx
+export SLACK_URL=xxx
+edit weebhook.rb and change @owner and @repo with your own github username and repository name
 ```
-[Create Github Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
+[Generate Github Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
+[Generate Slack Web_URL](https://api.slack.com/incoming-webhooks)
 
 ### To run program
 
