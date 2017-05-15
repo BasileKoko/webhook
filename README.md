@@ -25,18 +25,17 @@ solution as you feel fit.
 ```
 A server-side hook script called post-receive has been created.
 This hook will be added to the server where the repository is hosted.
-It would run when change occurs on the defined repository.
-I am still looking into the right way to implement this step.
+It would run when PullRequestEvent or PushEvent(merge) occurs on the defined repository.
 
 To ensure that notification can be sent,
-when the repository has a pull request and when pull request is merged,
-I create a separate file called webhook.rb and a test file webhook_spec.rb to test it.
+when the repository has a pull request and when a pull request is merged,
+I create two separate files called webhook.rb and webhook_spec.rb to test it.
 ```
 ### To do
 ```
-1. Add script to server hosting repository
-2. Improve condition for calling method merge_notification
-3. Enforce only one slack notification per event
+1. Add script to server hosting the repository
+2. Improve merge condition for calling method merge_notification.
+At the  moment when pull request is merged the event appears as PushEvent. I would like to differentiate the merge PushEvent from a standard PushEvent.
 ```
 ### Setup
 ```
