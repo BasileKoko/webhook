@@ -48,8 +48,8 @@ $ bundle install
 $ touch .env
 edit .env and add your github token and your slack web_url (see the links below).
 Example:
-export ACCESS_TOKEN=xxx
-export SLACK_URL=xxx
+export ACCESS_TOKEN=0123456789
+export SLACK_URL="url"
 edit weebhook.rb and change @owner and @repo with your own github username and repository name
 ```
 [Generate Github Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)  
