@@ -29,7 +29,7 @@ It would run when PullRequestEvent or PushEvent(merge) occurs on the defined rep
 
 To ensure that notification can be sent,
 when the repository has a pull request and when a pull request is merged,
-I create two separate files called webhook.rb and webhook_spec.rb to test it.
+I create two separate files called webhook.rb and webhook_spec.rb to test these functionalities.
 ```
 ### To do
 ```
